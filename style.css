@@ -12,6 +12,11 @@ ul{
 
 ul li a{
   text-decoration: none;
+  width: 100%;
+}
+
+div img{
+  display: block;
 }
 
 .flex-container{
@@ -77,3 +82,36 @@ header .menu{
   margin-bottom: 10px;
 }
 /*Fim Apresentacao*/
+
+/*quem somos*/
+#quem-somos{
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#quem-somos h2{
+  font-size: 32px;
+  color: #122A57;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#quem-somos h2:before{
+  content: "";
+  height: 40px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: #122A57;
+  position: relative;
+}
+
+#quem-somos p{
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+#quem-somos img{
+  min-width: 420px;
+}
+/*Fim quem somos*/
