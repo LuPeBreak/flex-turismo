@@ -115,3 +115,56 @@ header .menu{
   min-width: 420px;
 }
 /*Fim quem somos*/
+
+/*serviços*/
+.container-externo{
+  background-color: #122A57;
+  width: 100%;
+}
+
+.servicos{
+  flex-direction: column;
+  padding: 50px 0 100px 0;
+}
+.servicos h2{
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.servicos__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.servicos__list .servicos__item{
+  text-align: center;
+}
+
+.servicos__list .servicos__item a{
+  width: 220px;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 50px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: #122A57;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.servicos__list .servicos__item p{
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.servicos__list .servicos__item img{
+  width: 80%;
+  margin: auto;
+}
+/*Fim serviços*/
