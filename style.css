@@ -17,13 +17,16 @@ ul li a{
 
 div img{
   display: block;
+  max-width: 100%;
 }
 
 .flex-container{
   display: flex;
   max-width: 992px;
   margin: auto;
-  width:100%
+  width:100%;
+  min-width: 320px;
+  padding: 10px 15px;
 }
 
 .btn{
@@ -216,7 +219,7 @@ header .menu{
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
+ 
 .planos__item ul{
   padding: 10px 20px;
   display: flex;
@@ -242,3 +245,99 @@ header .menu{
 
 
 /*Fim planos*/
+/*rodape*/
+
+footer{
+  background-color: #122A57;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+footer .rodape{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.git{
+  text-decoration: none;
+  color: white;
+  transition: 500ms;
+}
+.git:hover{
+  background-color: white;
+  padding: 5px 10px;
+  color: #122A57;
+  border-radius: 50px;
+}
+/*Fim rodape*/
+
+
+/*mobile*/
+
+@media screen and ( max-width:992px){
+  
+  .flex-container{
+    flex-direction: column;
+  }
+
+  header{
+    height: 100px;
+  }
+  header .menu{
+    margin: 10px;
+  }
+
+  .apresentacao{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+
+  .apresentacao img{
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    align-self: center;
+  }
+
+  .apresentacao__texto{
+    width: 100%;
+  }
+
+  #quem-somos{
+    flex-direction: column-reverse;
+  }
+  #quem-somos img{
+    width: 100%;
+    margin: auto;
+  }
+
+  .servicos__list{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .servicos__item{
+    align-self: center;
+  }
+
+  .servicos__item img{
+    width: 50%;
+    margin: auto;
+  }
+
+  .planos__list{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .planos__list .planos__item{
+    max-width: 85%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+/*fim mobile*/
